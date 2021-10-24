@@ -1,0 +1,84 @@
+.selected-book {
+  width: 100%;
+  max-width: 800px;
+}
+.selected-book .selected,
+.selected-book form {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.selected-book .selected div,
+.selected-book form div {
+  width: 50%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+}
+.selected-book .selected div p,
+.selected-book form div p {
+  padding: 0;
+  margin: 0;
+}
+.selected-book .selected div p:first-child,
+.selected-book form div p:first-child {
+  margin-bottom: 5px;
+}
+.selected-book .selected div label,
+.selected-book form div label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.selected-book .selected div input:not([type=submit]):not([type=checkbox]), .selected-book .selected div select,
+.selected-book form div input:not([type=submit]):not([type=checkbox]),
+.selected-book form div select {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  height: 38px;
+  padding: 0 10px;
+  transition: border 0.5s;
+}
+.selected-book .selected div input:not([type=submit]):not([type=checkbox]):focus, .selected-book .selected div select:focus,
+.selected-book form div input:not([type=submit]):not([type=checkbox]):focus,
+.selected-book form div select:focus {
+  outline: 0;
+  border-bottom-color: dodgerblue;
+}
+.selected-book .selected div .preview,
+.selected-book form div .preview {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.selected-book .selected div .preview span,
+.selected-book form div .preview span {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 10px;
+}
+.selected-book .selected div.input,
+.selected-book form div.input {
+  width: 100%;
+}
+.selected-book .related {
+  width: 100%;
+  padding: 10px;
+}
+.selected-book .related .book-card {
+  padding: 5px;
+  width: 25%;
+}
+.selected-book .related .book-card .content {
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+.selected-book .related .book-card p {
+  font-size: 13px;
+}

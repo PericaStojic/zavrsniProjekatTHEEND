@@ -1,0 +1,13 @@
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .brand h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333;
+}
